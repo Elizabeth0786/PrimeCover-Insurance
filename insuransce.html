@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeCover Insurance</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+     <link rel="stylesheet" href="insurance.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Prime<span>Cover</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Protecting What Matters Most</h1>
+            <p>PrimeCover Assurances offers comprehensive coverage tailored to your needs, giving you peace of mind for life's unexpected moments.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Insurance Services</h2>
+                <p>We provide a wide range of insurance products to protect you, your family, and your assets.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Auto Insurance">
+                    </div>
+                    <div class="service-content">
+                        <h3>Auto Insurance</h3>
+                        <p>Comprehensive coverage for your vehicles with competitive rates and excellent customer service.</p>
+                        <a href="#contact" class="btn" onclick="showForm('auto')">Get Quote</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Home Insurance">
+                    </div>
+                    <div class="service-content">
+                        <h3>Home Insurance</h3>
+                        <p>Protect your home and belongings with customizable policies that fit your specific needs.</p>
+                        <a href="#contact" class="btn" onclick="showForm('home')">Get Quote</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Life Insurance">
+                    </div>
+                    <div class="service-content">
+                        <h3>Life Insurance</h3>
+                        <p>Secure your family's future with our flexible life insurance options and financial planning.</p>
+                        <a href="#contact" class="btn" onclick="showForm('life')">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="About SecureShield">
+            </div>
+            <div class="about-content">
+                <h2>About PrimeCover Assurances</h2>
+                <p>Founded in 2015, PrimeCover Assurances was created to bring trust, simplicity, and real support to the world of insurance. Starting from a small office in Lagos, we set out with one clear goal: to protect what matters most to people — their lives, health, property, and businesses. Offering reliable and affordable insurance with fast claims, clear policies, and personalized service. At PrimeCover, we don't just provide coverage — we provide peace of mind.</p>
+                <p>We understand that every client has unique needs, which is why we take the time to listen and create customized insurance plans that provide the right coverage at competitive rates.</p>
+                <p>Our team of experienced professionals is dedicated to helping you navigate the complexities of insurance, ensuring you make informed decisions.</p>
+                <a href="#" class="btn">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from our satisfied customers about their experiences with PrimeCover Insurance.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"PrimeCover provided excellent service when I needed to file a claim after a car accident. They handled everything efficiently and with genuine care."</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="client-name">
+                            <h4>Sarah Johnson</h4>
+                            <p>Auto Insurance Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Switching to PrimeCover for our home insurance saved us hundreds of dollars annually without compromising on coverage. Highly recommend!"</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="client-name">
+                            <h4>Michael Chen</h4>
+                            <p>Home Insurance Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The life insurance policy we got through PrimeCover gives us peace of mind knowing our children's future is protected."</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez">
+                        </div>
+                        <div class="client-name">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Life Insurance Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Contact us today for a free quote or to learn more about our insurance solutions.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>We're here to answer any questions you may have about our insurance products and services.</p>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 williams street.</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <span>(234) 812-652-6451</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>ogunnirane07@gmail.com</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="mainForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <select id="insuranceType" required onchange="showInsuranceForm(this.value)">
+                            <option value="">Select Insurance Type</option>
+                            <option value="auto">Auto Insurance</option>
+                            <option value="home">Home Insurance</option>
+                            <option value="life">Life Insurance</option>
+                            <option value="business">Business Insurance</option>
+                        </select>
+                        
+                        <!-- Auto Insurance Form -->
+                        <div id="autoForm" class="insurance-form">
+                            <h4>Auto Insurance Details</h4>
+                            <div class="form-group">
+                                <label for="vehicleMake">Vehicle Make</label>
+                                <input type="text" id="vehicleMake" placeholder="e.g. Toyota, Ford, etc.">
+                            </div>
+                            <div class="form-group">
+                                <label for="vehicleModel">Vehicle Model</label>
+                                <input type="text" id="vehicleModel" placeholder="e.g. Camry, F-150, etc.">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="vehicleYear">Year</label>
+                                    <input type="number" id="vehicleYear" placeholder="e.g. 2020" min="1900" max="2023">
+                                </div>
+                                <div class="form-group">
+                                    <label for="vehicleValue">Estimated Value</label>
+                                    <input type="number" id="vehicleValue" placeholder="$">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="drivingHistory">Driving History</label>
+                                <select id="drivingHistory">
+                                    <option value="">Select your driving history</option>
+                                    <option value="clean">Clean (no accidents/violations)</option>
+                                    <option value="minor">Minor incidents</option>
+                                    <option value="major">Major incidents</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Home Insurance Form -->
+                        <div id="homeForm" class="insurance-form">
+                            <h4>Home Insurance Details</h4>
+                            <div class="form-group">
+                                <label for="homeAddress">Property Address</label>
+                                <input type="text" id="homeAddress" placeholder="Full address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="homeType">Home Type</label>
+                                    <select id="homeType">
+                                        <option value="">Select home type</option>
+                                        <option value="single">Single Family</option>
+                                        <option value="condo">Condo</option>
+                                        <option value="townhouse">Townhouse</option>
+                                        <option value="apartment">Apartment</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="homeYear">Year Built</label>
+                                    <input type="number" id="homeYear" placeholder="e.g. 1995" min="1800" max="2023">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="homeSize">Square Footage</label>
+                                    <input type="number" id="homeSize" placeholder="sq ft">
+                                </div>
+                                <div class="form-group">
+                                    <label for="homeValue">Estimated Value</label>
+                                    <input type="number" id="homeValue" placeholder="$">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="coverageNeeds">Coverage Needs</label>
+                                <select id="coverageNeeds">
+                                    <option value="">Select coverage level</option>
+                                    <option value="basic">Basic</option>
+                                    <option value="standard">Standard</option>
+                                    <option value="premium">Premium</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Life Insurance Form -->
+                        <div id="lifeForm" class="insurance-form">
+                            <h4>Life Insurance Details</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="birthDate">Date of Birth</label>
+                                    <input type="date" id="birthDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="coverageAmount">Coverage Amount</label>
+                                    <select id="coverageAmount">
+                                        <option value="">Select amount</option>
+                                        <option value="100000">$100,000</option>
+                                        <option value="250000">$250,000</option>
+                                        <option value="500000">$500,000</option>
+                                        <option value="1000000">$1,000,000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="healthStatus">Health Status</label>
+                                <select id="healthStatus">
+                                    <option value="">Select health status</option>
+                                    <option value="excellent">Excellent</option>
+                                    <option value="good">Good</option>
+                                    <option value="fair">Fair</option>
+                                    <option value="poor">Poor</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tobaccoUse">Tobacco Use</label>
+                                <select id="tobaccoUse">
+                                    <option value="">Select tobacco use</option>
+                                    <option value="never">Never used</option>
+                                    <option value="former">Former user</option>
+                                    <option value="occasional">Occasional user</option>
+                                    <option value="regular">Regular user</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="beneficiaries">Beneficiaries (names and relationship)</label>
+                                <textarea id="beneficiaries" placeholder="List beneficiaries"></textarea>
+                            </div>
+                        </div>
+                        
+                        <textarea id="message" placeholder="Additional information or questions"></textarea>
+                        <button type="submit">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>PrimeCover</h3>
+                    <p>Providing reliable insurance solutions since 1995. Protecting what matters most to you and your family.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#contact" onclick="showForm('auto')">Auto Insurance</a></li>
+                        <li><a href="#contact" onclick="showForm('home')">Home Insurance</a></li>
+                        <li><a href="#contact" onclick="showForm('life')">Life Insurance</a></li>
+                        <li><a href="#contact" onclick="showForm('business')">Business Insurance</a></li>
+                        <li><a href="#">Health Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Claims Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 PrimeCover Assurances. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
